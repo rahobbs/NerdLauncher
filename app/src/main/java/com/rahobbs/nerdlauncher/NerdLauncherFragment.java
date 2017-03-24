@@ -48,6 +48,7 @@ public class NerdLauncherFragment extends Fragment {
 
         PackageManager pm = getActivity().getPackageManager();
         List<ResolveInfo> activities = pm.queryIntentActivities(startupIntent, 0);
+
         Collections.sort(activities, new Comparator<ResolveInfo>() {
            public int compare(ResolveInfo a, ResolveInfo b) {
                PackageManager pm = getActivity().getPackageManager();
